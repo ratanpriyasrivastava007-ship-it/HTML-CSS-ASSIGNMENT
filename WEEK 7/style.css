@@ -1,4 +1,5 @@
 
+
 * {
     box-sizing: border-box;
 }
@@ -12,7 +13,6 @@ body {
 .landing {
     background-color: lightblue;
 }
-
 
 .navbar {
     display: flex;
@@ -52,6 +52,7 @@ body {
     align-items: center;
     height: 350px;
     text-align: center;
+    padding: 15px;
 }
 
 .banner button {
@@ -77,4 +78,43 @@ body {
     border: 1px solid gray;
     border-radius: 10px;
     text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
 }

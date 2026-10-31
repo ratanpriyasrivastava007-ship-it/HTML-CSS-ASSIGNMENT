@@ -10,6 +10,11 @@ body {
     font-size: 1rem;
 }
 
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
 
 header {
     background-color: black;
@@ -24,8 +29,10 @@ header h2 {
 
 nav {
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 nav a {
@@ -35,7 +42,7 @@ nav a {
 }
 
 .hero {
-    padding: 2.5rem 1.25rem;
+    padding: 2rem 1rem;
     text-align: center;
     background-color: lightblue;
 }
@@ -63,10 +70,10 @@ button {
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .box {

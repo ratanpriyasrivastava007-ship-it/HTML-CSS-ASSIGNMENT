@@ -43,10 +43,22 @@ main {
 }
 
 .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
     background-color: skyblue;
     padding: 30px;
-    text-align: center;
     border: 1px solid black;
+}
+
+.box span {
+    font-size: 25px;
+}
+
+.box p {
+    margin: 0;
 }
 
 footer {

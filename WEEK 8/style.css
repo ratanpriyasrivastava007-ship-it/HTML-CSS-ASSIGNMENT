@@ -1,0 +1,22 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.box {
+    background-color: lightblue;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid black;
+}

@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,13 +47,20 @@ body {
     align-items: center;
     height: 350px;
     background-color: lightgray;
-    text-align: center;
+      text-align: center; }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
 
-.banner button {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.card {
+    flex: 1 1 200px;
+    background-color: lightblue;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
 }

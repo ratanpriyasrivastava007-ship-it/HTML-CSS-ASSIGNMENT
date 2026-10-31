@@ -1,22 +1,50 @@
-
 * {
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
     font-family: Arial;
-    margin: 20px;
 }
 
-.dashboard {
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    background-color: lightgray;
+    width: 200px;
+    padding: 20px;
+}
+
+main {
+    flex: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+    
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
     gap: 15px;
+    padding: 20px;
 }
 
 .box {
-    background-color: lightblue;
+    background-color: skyblue;
     padding: 30px;
     text-align: center;
     border: 1px solid black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }

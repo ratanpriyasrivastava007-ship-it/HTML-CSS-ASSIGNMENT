@@ -7,30 +7,37 @@ body {
     font-family: Arial;
 }
 
+.container {
+    display: grid;
+
+    grid-template-areas:
+        "head head"
+        "side main"
+        "foot foot";
+
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    min-height: 100vh;
+}
+
 header {
+    grid-area: head;
     background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-.container {
-    display: flex;
-}
-
 aside {
+    grid-area: side;
     background-color: lightgray;
-    width: 200px;
     padding: 20px;
 }
 
 main {
-    flex: 1;
+    grid-area: main;
     display: grid;
-
-    
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
     gap: 15px;
     padding: 20px;
 }
@@ -43,8 +50,9 @@ main {
 }
 
 footer {
+    grid-area: foot;
     background-color: black;
     color: white;
-    text-align: center;
     padding: 15px;
+    text-align: center;
 }

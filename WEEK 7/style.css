@@ -8,11 +8,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+.landing {
+    background-color: lightblue;
+}
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
     padding: 15px 30px;
 }
 
@@ -46,8 +51,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 350px;
-    background-color: lightgray;
-      text-align: center; }
+    text-align: center;
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
 
 .cards {
     display: flex;
